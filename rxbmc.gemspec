@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jonathan."]
   spec.email         = ["jonathan.borg.frodin@gmail.com"]
   spec.summary       = %q{A cli tool for controlling an xbmc server}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = ""
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -19,6 +19,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "thor", "~>0.18.1"
+  spec.add_runtime_dependency "ruby-xbmc"
+  spec.add_runtime_dependency "pry"
+  spec.add_runtime_dependency "iconv"
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
 end
